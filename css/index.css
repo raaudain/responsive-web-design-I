@@ -52,7 +52,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+
 }
 
 html, body {
@@ -87,7 +87,7 @@ header nav div{
 .links{
 	display:flex;
 	width:75%;
-    justify-content: space-around;
+    justify-content: space-between;
     
 	
 }
@@ -108,7 +108,8 @@ header nav div{
 
 .headInfo{
     display: flex;
-    margin-top: 3%;
+    margin: 10%;
+    
 }
 
 .headLeft{
@@ -120,7 +121,7 @@ header nav div{
 .headLeft h1{
     font-size: 80px;
     text-align: center;
-    line-height: 80%;
+    line-height: 44%;
 }
 
 .getStarted{
@@ -137,14 +138,14 @@ header nav div{
 
 .headRight{
     width: 60%;
-    
-    border: 1px solid;
+
 }
 
 .headRight img{
+    
     display: flex;
-    justify-content: center;
-    object-fit: fill;
+    margin: auto;
+    
 }
 
 
@@ -196,10 +197,6 @@ footer p{
 
 /* Tablet */
 
-
-
-/* Tablet */
-
 @media(max-width: 800px){
     .container{
         margin: auto;
@@ -207,35 +204,36 @@ footer p{
     }
     
     header nav{
-        display: flex;
         flex-direction: column-reverse;
         
     }
 
     .links{
-        
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        
+        width:100%;
         
     }
 
     .links a{
-        display: flex;
-        justify-content: center space-around;
         
-        width: 100%;
         padding: 2% 0;
-        text-align: center;
         
     }
 
     .logo{
         display: flex;
         align-items: center;
-        text-align: center;
-        
+        margin: 3% 0;
+        width: 100%;
+    }
+
+    .logo img{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headInfo{
+        margin: 7% 0 12%;
     }
 
     .headLeft{
@@ -249,17 +247,19 @@ footer p{
         line-height: 35%;
     }
 
+   
     .headRight{
         display: none;
     }
 
 }
 
+
 /* Mobile */
 @media(max-width: 500px){
     .container{
         margin: auto;
-        width: 100%;
+        width: auto;
     }
 
     /* Header */
@@ -267,34 +267,25 @@ footer p{
     header nav{
         display: flex;
         flex-direction: column-reverse;
-
-        
     }
 
     .links{
-        
         display: flex;
         flex-direction: column;
-
-        width:100%;
-        
-    }
+     }
 
     .links a{
-        display: flex;
-
-        border: 1px solid #b0bacc;
+        justify-content: center;
+        border-bottom: 1px solid ;
         width: 100%;
-        padding: 2% 0;
-        text-align: center;
     }
-
+ 
     .logo{
         display: flex;
         justify-content: center;
         width: 100%;
-
-        
+        border-bottom: 1px solid #b0bacc;
+        padding: 4% 0; 
     }
 
     .headLeft{
@@ -307,6 +298,9 @@ footer p{
         line-height: 40%;
     }
     
+    .getStarted{
+        padding-bottom: 15%;
+    }
     .headRight{
         display:none;
     }
@@ -345,3 +339,5 @@ footer p{
 	text-align: center;
     }
 }
+
+
